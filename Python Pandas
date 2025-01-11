@@ -1,0 +1,5 @@
+import pandas as pd
+
+tabela = pd.read_excel(r"C:\Users\Pichau\Desktop\bd_vendas.xlsx")
+tabela["Faturamento"] = tabela["Preco Unit"] * tabela["Qtde"]
+print(tabela["Faturamento"].describe())
